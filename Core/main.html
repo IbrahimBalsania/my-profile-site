@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="generator" content="Mobirise v4.3.5, mobirise.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/assets/images/iblg.jpg" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="description" content="Personal profile website of Ibrahim Balsania">
+	<meta name="keywords" content="HTML,CSS,BOOTSTRAP,ANGULARJS,JAVASCRIPT,NODEJS,PYTHON,ORACLE,MYSQL,MONGODB,REDIS">
+	<meta name="author" content="Ibrahim Balsania">
+	<title>Ibrahim Balsania</title>
+	<link rel="stylesheet" href="/assets/tether/tether.min.css">
+	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/assets/dropdown/css/style.css">
+	<link rel="stylesheet" href="/assets/socicon/css/styles.css">
+	<link rel="stylesheet" href="/assets/as-pie-progress/css/progress.min.css">
+	<link rel="stylesheet" href="/assets/theme/css/style_progress.css">
+	<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css"> 
+	<link rel="stylesheet" href="assets/mobirise/css/mbr_progress.css" type="text/css"> 
+	<link rel="stylesheet" href="assets/mobirise/css/mbr-timeline.css" type="text/css">
+</head>
+<script src="/assets/VueJS/vue.js"></script>
+<!-- <script src="/assets/angular/angular.min.js"></script> -->
+<!-- <script src="/main.js"></script> -->
+
+<body >
+<section class="testimonials3 cid-qyucOJY58V" id="testimonials3-2" data-rv-view="171">
+    <div class="container">
+        <div class="media-container-row">
+			<div class="media-content px-3 align-self-center mbr-white py-2">
+                <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-1">
+                   Ibrahim Balsania
+                </p>
+                <p class="mbr-author-desc mbr-fonts-style display-7">
+                   WEB DEVELOPER
+                </p>
+				<!-- <h1 class="mbr-text testimonial-text mbr-fonts-style display-7"><span style="font-style: normal;">Specialise in Back-End Development</span></h1> -->
+            </div>
+			<div class="mbr-figure pl-lg-5" style="width: 130%;">
+              <img src="assets/images/IB.jpg" alt="" title="" media-simple="true">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section info2 cid-qyv0BRlbE8" id="info2-g" data-rv-view="174">
+    <div class="container">
+        <div class="row justify-content-left">
+            <div class="media-container-column title col-12 col-lg-5 col-md-5">
+                <h2 class="align-left mbr-bold mbr-white pb-3 mbr-fonts-style display-2">
+				<span style="font-weight: normal;">CONTACT ME</span></h2>
+            </div>
+			<div class="media-container-column col-12 col-lg-5 col-md-5">
+                <!-- <h5 class="align-left mbr-bold pb-3 mbr-fonts-style display-2"> -->
+					<span class="align-right mbr-bold pb-3 mbr-fonts-style display-5">E-Mail : ibrahimbalsania@gmail.com</span>
+					<!-- <a class="btn btn-black-outline display-4" href="#">SEND ME A NOTE</a> -->
+				<!-- </h5>	 -->
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-qyuzy9HYXi" id="content4-d" data-rv-view="177">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">My Works</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="mywork" class="features2 cid-qyufBFEj84" id="features2-4" data-rv-view="179">
+    <div class="container">
+        <div class="media-container-row">
+            <div v-for="work in works" class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img v-bind:src="work.img_src" v-bind:alt="work.img_alt" title="" media-simple="true">
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title pb-3 mbr-fonts-style display-5">
+                                {{work.project_name}}
+                            </h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                {{work.project_desc}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skill" class="progress-bars3 cid-rq9EL7Zuki" id="progress-bars3-a">
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
+            My Skills
+        </h2>
+
+        <h3 class="mbr-section-subtitle mbr-fonts-style display-5">
+            Back-End Technologies
+        </h3>
+    
+        <div class="media-container-row pt-5 mt-2">
+            <div v-for="backEndTech in backEndTechs" class="card p-3 align-center">
+                <div class="wrap">
+                    <div class="pie_progress progress2" role="progressbar" data-goal="80">
+                        <p class="pie_progress__number mbr-fonts-style display-5">{{backEndTech.skilllevel}}</p>
+                    </div>
+                </div> 	
+                <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">
+                        {{backEndTech.techname}}
+                    </h4>
+                </div>                 
+            </div>
+		</div>
+		<h3 class="mbr-section-subtitle mbr-fonts-style display-5">
+            Front-End Technologies
+        </h3>
+		<div class="media-container-row pt-5 mt-2">
+			<div v-for="frontEndTech in frontEndTechs" class="card p-3 align-center">
+                <div class="wrap">
+                    <div class="pie_progress progress1" role="progressbar" data-goal="80">
+                        <p class="pie_progress__number mbr-fonts-style display-5">{{frontEndTech.skilllevel}}</p>
+                    </div>
+                </div> 
+                <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">
+                            {{frontEndTech.techname}}
+                    </h4>
+                </div>                 
+            </div>
+		</div>
+		<h3 class="mbr-section-subtitle mbr-fonts-style display-5">
+            Database Technologies
+        </h3>
+		<div class="media-container-row pt-5 mt-2">
+			<div v-for="DBTech in DBTechs" class="card p-3 align-center">
+                <div class="wrap">
+                    <div class="pie_progress progress4" role="progressbar" data-goal="80">
+                        <p class="pie_progress__number mbr-fonts-style display-5">{{DBTech.skilllevel}}</p>
+                    </div>
+                </div> 
+                <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">
+                        {{DBTech.techname}}
+                    </h4>
+                </div>                 
+            </div>           
+        </div>
+	</div>
+</section>
+
+<section class="mbr-section content4 cid-qyuivhFk38" id="content4-c" data-rv-view="182">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">My Awards</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="award_details" class="mbr-section article content12 cid-qyuinV19zB" id="content12-9" data-rv-view="184">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li v-for="award in awards"><strong>{{award.year}} - </strong>{{award.desc}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-qyuiu1KBmN timeline1 cid-rqbWi1Nvqk" id="timeline1-8">
+	<div class="container align-center">
+        <h2 class="align-center pb-3 mbr-fonts-style display-2">
+            My Background
+        </h2>
+        <!-- <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5"> -->
+            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit -->
+        <!-- </h3> -->
+        <div class="container timelines-container" mbri-timelines="">
+            <!--1-->
+            <div class="row timeline-element reverse separline">
+                 <div class="timeline-date-panel col-xs-12 col-md-6  align-left">         
+                    <div class="time-line-date-content">
+                        <p class="mbr-timeline-date mbr-fonts-style display-5">
+                            2014 - Present  
+                        </p>
+                    </div>
+                </div>
+           <span class="iconBackground"></span>
+            <div class="col-xs-12 col-md-6 align-right">
+                <div class="timeline-text-content">
+                    <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                        Web Developer
+                    </h4>
+                    <p class="mbr-timeline-text mbr-fonts-style display-7">
+                        Working in Credencen Analytics India Private Limited as Software Developer.
+                    </p>
+                 </div>
+            </div>
+            </div>
+            <!--2-->
+            <div class="row timeline-element  separline">
+                <div class="timeline-date-panel col-xs-12 col-md-6 align-right">
+                    <div class="time-line-date-content">
+                        <p class="mbr-timeline-date mbr-fonts-style display-5">
+                            2012 - 2015  
+                        </p>
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-xs-12 col-md-6 align-left ">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            MCA (Mumbai University)
+                        </h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">
+                            Completed Master in Computer Application from MET Institute Of Computer Science, Bandra (west), Mumbai, with FIRST CLASS under University of Mumbai
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="row timeline-element separline">
+                <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
+                    <div class="time-line-date-content">
+                        <p class="mbr-timeline-date mbr-fonts-style display-5">
+                            2008 - 2011
+                        </p>
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-xs-12 col-md-6 align-left">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            B. Sc. Com. Sci. (Mumbai University)
+                        </h4>      
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">
+                            Completed Bachelor of Science in Computer Science from Anjuman-e-islam Akbar Peerbhoy College, Mumbai, with FIRST CLASS under University of Mumbai.
+                        </p>
+                    </div>
+                </div>
+            </div> 
+			<div class="row timeline-element reverse">
+                <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
+                    <div class="time-line-date-content">
+                        <p class="mbr-timeline-date mbr-fonts-style display-5">
+                            2006 - 2008
+                        </p>
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-xs-12 col-md-6 align-right">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            HSC in Science (Mumbai University)
+                        </h4>      
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">
+                            Completed HSC from Saboo Siddik College under University of Mumbai.
+                        </p>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+</section>
+
+<section id="follow" class="cid-qyuZH0oPRJ" id="social-buttons2-f" data-rv-view="188">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-8 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2">
+                    FOLLOW ME!
+                </h2>
+                <div class="social-list pl-0 mb-0">
+                    <a v-for="fm in followMe" v-bind:href="fm.url" target="_blank">
+                        <span v-bind:class="fm.class_name" media-simple="true"></span>
+                    </a>
+                </div>
+				<div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                     � Copyright 2019 - All Rights Reserved
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="/assets/VueJS/vue.js"></script>
+<script src="/assets/web/assets/jquery/jquery.min.js"></script>
+<script src="/assets/popper/popper.min.js"></script>
+<script src="/assets/tether/tether.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/smooth-scroll/smooth-scroll.js"></script>
+<script src="/assets/dropdown/js/script.min.js"></script>
+<script src="/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+<script src="/assets/social-likes/social-likes.js"></script>
+<!-- <script src="/assets/theme/js/script.js"></script> -->
+<script src="/assets/as-pie-progress/jquery-as-pie-progress.min.js"></script>
+<!-- <script src="/assets/angular/angular.min.js"></script> -->
+<script src="/main.js"></script>
+<!-- <script src="/assets/smoothscroll/smooth-scroll.js"></script> -->
+</body>
+</html>
