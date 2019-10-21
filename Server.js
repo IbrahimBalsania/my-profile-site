@@ -3,7 +3,7 @@ const mBodyParser = require('body-parser');
 const mFs = require('fs');
 const mIP = require('ip');
 const app = express();
-
+const port = process.env.PORT;
 // Middlewares
 app.use(express.static('Core'))
 app.use(mBodyParser.urlencoded({ extended: true }))
@@ -21,6 +21,6 @@ app.use(function(err, req, res, next) {
 });
 
 // Server Listen
-app.listen(4000, () => {
-    console.log("Server is listening on URL : http://"+mIP.address()+":4000");
+app.listen(port, () => {
+    console.log("Server is listening on URL : http://"+mIP.address()+":"+port);
 });
