@@ -3,7 +3,7 @@ const mBodyParser = require('body-parser');
 const mFs = require('fs');
 const mIP = require('ip');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT||3000;
 // Middlewares
 app.use(express.static('Core'))
 app.use(mBodyParser.urlencoded({ extended: true }))
@@ -11,7 +11,7 @@ app.use(mBodyParser.json())
 
 // Routes
 app.get('/', (req, res) => {
-    res.end(mFs.readFileSync('./Core/Main.html'));
+    res.end(mFs.readFileSync('/Core/Main.html'));
 });
 
 // Exception Handling
