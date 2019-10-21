@@ -11,7 +11,7 @@ app.use(mBodyParser.json())
 
 // Routes
 app.get('/', (req, res) => {
-    res.end(mFs.readFileSync('./Core/Main.html'));
+    res.end(mFs.readFileSync('./Core/main.html'));
 });
 
 // Exception Handling
