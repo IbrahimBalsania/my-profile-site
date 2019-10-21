@@ -3,7 +3,7 @@ new Vue({
   data: {
       msg:'My first VueJS Task'
       ,flg:true
-      ,backEndTechs:[{"techname":"JavaScript","skilllevel":"80"},{"techname":"NodeJs","skilllevel":"80"},{"techname":"ExpressJS","skilllevel":"80"}]
+      ,backEndTechs:[{"techname":"JavaScript","skilllevel":"81"},{"techname":"NodeJs","skilllevel":"80"},{"techname":"ExpressJS","skilllevel":"80"}]
       ,frontEndTechs:[{"techname":"HTML/CSS","skilllevel":"80"},{"techname":"Bootstrap","skilllevel":"80"},{"techname":"VueJS","skilllevel":"80"}]
       ,DBTechs:[{"techname":"Oracle","skilllevel":"80"},{"techname":"MySQL","skilllevel":"80"},{"techname":"MongoDB","skilllevel":"80"},{"techname":"Redis","skilllevel":"80"}]
      }
