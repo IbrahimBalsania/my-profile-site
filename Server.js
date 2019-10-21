@@ -11,13 +11,13 @@ app.use(mBodyParser.json())
 
 // Routes
 app.get('/', (req, res) => {
-    res.end(mFs.readFileSync('/Core/Main.html'));
+    res.end(mFs.readFileSync('./Core/Main.html'));
 });
 
 // Exception Handling
 app.use(function(err, req, res, next) {
     console.error(err.stack);
-    res.status(500).send('Exception : Something broke!');
+    res.status(500).send('Exception : Something broke!'+err.stack);
 });
 
 // Server Listen
